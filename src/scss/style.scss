@@ -4,4 +4,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  body {
+    background-color: map-get($color, background, body);
+    font-family: $Rufina;
+    .container {
+      padding: 45px 45px 0px 45px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      header {
+        h1 {
+          font-size: map-get($font, size, header);
+          color: map-get($color, primary, white);
+          font-weight: map-get($font, weight, regular);
+        }
+      }
+      .pomodoro {
+        position: relative;
+        margin-top: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .timer {
+          position: absolute;
+          display: flex;
+          column-gap: 5px;
+          align-items: center;
+          margin-top: 35px;
+          .number1,
+          .number2 {
+            font-family: $Ruda;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: map-get($color, background, number);
+            color: map-get($color, primary, white);
+            height: 60px;
+            width: 60px;
+            font-size: map-get($font, size, number);
+            border-radius: 7px;
+          }
+          .circles {
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+            div {
+              background-color: map-get($color, primary, white);
+              height: 5px;
+              width: 5px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .buttons {
+        margin-top: 60px;
+        display: flex;
+        column-gap: 20px;
+        div {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          background-color: map-get($color, background, button);
+          padding: 5px;
+        }
+        .playBtn {
+          content: url(../../assets/play.svg);
+        }
+        .pause {
+          content: url(../../assets/pause.svg);
+        }
+        .rightBtn {
+          content: url(../../assets/right.svg);
+        }
+      }
+    }
+  }
 }

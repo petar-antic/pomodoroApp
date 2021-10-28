@@ -1,19 +1,31 @@
 // // // // Typography
 
-// // Font
-// $fontFamily: ,
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
 
-// $font: (
-//   weight: (
-//   ),
-// );
+// Font
+$Rufina: 'Rufina', serif;
+$Ruda: 'Ruda', sans-serif;
+
+$font: (
+  size: (
+    header: 26px,
+    number: 45px,
+  ),
+  weight: (
+    regular: 400,
+  ),
+);
 
 // // // Colors
 
-// $color: (
-//   primary: (
-
-//   ),
-//   background: (
-//   ),
-// );
+$color: (
+  primary: (
+    white: #ffffff,
+  ),
+  background: (
+    body: #3a383d,
+    number: rgba(163, 21%, 21%, 0.7),
+    button: #ffce3b,
+  ),
+);
